@@ -25,7 +25,7 @@ body {
     background-color: var(--bg-primary);
     display: flex;
     height: 80px;
-    z-index: 999;
+    z-index: 100;
     justify-content: space-around;
     position: fixed;
     width: 100%;
@@ -70,13 +70,24 @@ body {
     padding: 0.5rem;
 }
 
+
 .posts-info {
     background-color: var(--bg-black);
     height: 50px;
-    z-index: 999;
+    z-index: 500;
     width: 100%;
     position: fixed;
     margin-top: 145px;
+}
+
+.posts-info img {
+    left: 130px;
+    top: -132px;
+    position: absolute;
+    height: 120px;
+    width: 125px;
+    border-radius: 25%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .posts-info h3 {
