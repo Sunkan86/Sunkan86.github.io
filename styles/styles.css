@@ -3,6 +3,7 @@
     --bg-primary: #569259;
     --bg-secondary: #787878;
     --bg-black: #000000;
+    --highlight-author: #343139b7;
 }
 
 * {
@@ -82,18 +83,22 @@ body {
     padding: 0.75rem 0 0.5rem 2rem;
 }
 
-.blog-frame {
-    margin: 0.5rem 0.5rem 0 1rem;
-}
 
 .content-column {
-    width: 70%;
-    margin: 12px;
-    /* border: 2px solid blue; */
+    width: 80%;
+    margin: 0 0 0 28px;
+    border: 4px solid orange;
 }
 
 .content-aside-wrapper {
-    width: 30%;
+    width: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+  .content-aside-wrapper {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
 .content-aside {
@@ -106,11 +111,13 @@ body {
     line-height: 1.5;
     border: 1px solid var(--bg-black);
     max-width: 250px;
+    margin: auto;
 }
 
 .tags-wrapper {
     justify-content: space-between;
     margin: 8px;
+    line-height: 2.5;
 }
 
 .search-container {
@@ -146,18 +153,68 @@ body {
 
 
 .blog-title {
-    color: var(--bg-primary)
+    color: var(--bg-black);
+    padding: 8px 0;
 }
 
-/* div {
+.author {
+    height: 18px;
+    color: var(--bg-secondary);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+    margin-bottom: 10px;
+    width: 280px;
+}
+
+.content-box {
+    display: flex;
+}
+
+.img-frame {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    min-width: 240px;
+    height: 180px;
+}
+
+.img-frame img {
+    width: 100%;
+    height: 100%;
+}
+
+.text-wrapper {
+    padding: 0 12px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.article-link-box {
+    margin: 12px;
+    height: 40px;
+}
+
+.full-article-btn {
+    padding: 4px;
+    box-shadow: 3px 3px 0 rgb(0, 0, 0);
+}
+
+.conent-frame {
     border: 2px solid red;
-} */
+}
 
 .content-wrapper {
-    /* border: 4px solid green; */
+    border: 4px solid green;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    padding-top: 200px;
+    padding-top: 210px;
+}
+
+@media only screen and (max-width: 600px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
 }
 
