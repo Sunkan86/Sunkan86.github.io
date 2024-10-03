@@ -372,3 +372,50 @@ footer {
 .text-aside {
     width: 50%;
 }
+
+.author-about-wrapper {
+    height: 800px;
+    margin: 0 28px 4px;
+    width: 75%;
+    padding-top: 280px;
+}
+
+.author-info-box {
+    border: 2px solid var(--bg-black);
+    margin: 12px 0;
+}
+
+.about-info-top {
+    border-bottom: 2px solid var(--bg-black);
+    background-color: var(--bg-secondary);
+    margin: 0px 0;
+    padding: 0 12px;  
+    height: 60px;
+    display: flex;
+}
+
+.author-profile {
+    height: 60px;
+}
+
+.author-profile img {
+    height: 100%;
+}
+
+.flex-centered  {
+    font-size: 1.25rem;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-info-bottom {
+    padding: 16px;
+}
+
+.backward-forward-wrapper {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+}
